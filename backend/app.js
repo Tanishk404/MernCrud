@@ -23,6 +23,6 @@ app.use(routers)
 
 DBCONNECTION();
 
-app.listen(PORT ,'0.0.0.0' () => {
+app.listen(PORT ,'0.0.0.0', () => {
     console.log(`App is running on http://localhost:${PORT}`)
 })
