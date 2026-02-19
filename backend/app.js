@@ -8,7 +8,7 @@ import { SchemaModel } from "./models/Schema.js";
 dotenv.config();
 
 const app = express();
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 10000;
 
 console.log(process.env.MONGO_URL)
 
@@ -23,6 +23,6 @@ app.use(routers)
 
 DBCONNECTION();
 
-app.listen(PORT , () => {
+app.listen(PORT ,'0.0.0.0' () => {
     console.log(`App is running on http://localhost:${PORT}`)
 })
